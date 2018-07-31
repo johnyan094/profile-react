@@ -1,0 +1,5 @@
+export {Header} from '../src/components/header'
+export {Nav} from '../src/components/nav'
+export {ProfilePage, ProfileSideBar, ProfileBody} from '../src/components/page/profile-page'
+export {Pager} from '../src/components/page/pager'
+// export * from '../src/components/section/index'
