@@ -1,0 +1,5 @@
+export {ContactMe} from './contactMe'
+export {AboutMe} from './aboutMe'
+export {SocialLink} from './socialLink'
+export {Education} from './education'
+export {Experience} from './experience'
