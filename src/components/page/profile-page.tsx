@@ -1,6 +1,7 @@
 import * as React from 'react';
+import * as Constant from './Constant'
 import {SectionMainBody,SectionSide} from '../section/index'
-import {AboutMe, CCAClient, ContactMe, DataComClient, Education, Experience, SocialLink} from './profile/index'
+import {AboutMe, ContactMe, Education, Experience, SocialLink} from './profile/index'
 
 export class ProfilePage extends React.Component {
 
@@ -55,16 +56,28 @@ export class ProfileBody extends React.Component {
                 Full Stack Developer
             </div>
             <Experience 
-              exp = {DataComClient} 
+              exp = {Constant.DataComClient} 
               company = 'Datacom'
               subText = 'I have been contracted by Datacom to the below clients in a full-time capacity (on-site) as a Software Engineer'
               date = 'Oct 2014 – Current'
             />
             <Experience 
-              exp = {CCAClient} 
+              exp = {Constant.CCAClient} 
               company = 'COCA-COLA AMATIL'
               subText = ''
               date = 'Feb 2013 – Oct 2014'
+            />
+            <Experience 
+              exp = {Constant.ZorderClient} 
+              company = 'Z-Order'
+              subText = ''
+              date = 'November 2012 – Dec 2012'
+            />
+            <Experience 
+              exp = {Constant.OntempoClient} 
+              company = 'ONTEMPO'
+              subText = ''
+              date = 'July 2012 – November 2012'
             />
           </SectionMainBody>
           <SectionMainBody name='Interest' />
