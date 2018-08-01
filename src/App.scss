@@ -72,3 +72,8 @@ New stuff
   background-color: #efefef;
   text-align: center;
 }
+
+a {
+    white-space: pre-wrap; /* css-3 */     
+    word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
