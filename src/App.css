@@ -1,4 +1,7 @@
 @import url(./components/page/profile/profile.css);
+body {
+  font-family: Calibri,"Helvetica Neue","Segoe UI",Helvetica,Arial,sans-serif !important; }
+
 .App {
   text-align: center; }
 
@@ -30,12 +33,13 @@ New stuff
 .section-body div.header {
   text-align: center;
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  font-size: 18px; }
 
 .section-body div.header:before, .section-body div.header:after {
   content: "";
   flex: 1 1;
-  border-bottom: 1px solid #000;
+  border-bottom: 3px solid #7f298c;
   margin: auto; }
 
 .section-body div.header span {
@@ -46,11 +50,21 @@ New stuff
   /* establish flex container */
   align-items: center; }
 
+.section-main-body .left {
+  font-size: 32px;
+  color: #7f298c;
+  margin-top: 6px; }
+
 .section-main-body .right {
-  border-bottom: 1px solid black;
+  border-bottom: 3px solid #7f298c;
   padding-bottom: 2px;
   width: 100%;
-  margin-left: 10px; }
+  margin-left: 10px;
+  font-size: 23px;
+  color: #7f298c; }
+
+.section-body .body {
+  padding: 10px; }
 
 .footer {
   right: 0;
@@ -65,3 +79,34 @@ a {
   /* css-3 */
   word-wrap: break-word;
   /* Internet Explorer 5.5+ */ }
+
+.contact-me i {
+  font-size: 22px; }
+
+.social-link {
+  text-align: center; }
+  .social-link i {
+    font-size: 22px;
+    color: #7f298c;
+    webkit-transition: font-size 1s;
+    -moz-transition: font-size 1s;
+    -o-transition: font-size 1s;
+    transition: font-size 1s; }
+    .social-link i:hover {
+      font-size: 44px; }
+
+.test {
+  display: flex;
+  height: 1rem;
+  background-color: #e9ecef; }
+  .test .tt {
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: #7f298c;
+    width: 50%; }

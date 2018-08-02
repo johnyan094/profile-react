@@ -56,7 +56,7 @@ export class SectionMainBody extends React.Component<ISectionMainBodyProps> {
     return (
       <div className='section-main-body'>
         <div className='header'>
-          <div className='left'><i className={icon} style={{ fontSize: '24px' }} /></div>
+          <i className={`left ${icon}`} />
           <div className='right'>{this.props.name}</div>
         </div>
         <div className='body'>

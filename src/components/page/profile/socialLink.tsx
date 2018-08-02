@@ -4,18 +4,15 @@ export class SocialLink extends React.Component {
 
     public render() {
         return (
-            <div className='social-link'>
-                <div>
-                    <i className="fab fa-facebook" />
-                    <a href='https://www.facebook.com/si.ji.16'>https://www.facebook.com/si.ji.16</a>
+            <div className='social-link row'>
+                <div className='col-4'>
+                    <a target="_blank" href='https://www.facebook.com/si.ji.16'><i className="fab fa-facebook" /></a>
                 </div>
-                <div>
-                    <i className="fab fa-linkedin" />
-                    <a href='https://www.linkedin.com/in/john-yan-2b839189/'>https://www.linkedin.com/in/john-yan-2b839189/</a>
+                <div className='col-4'>
+                    <a target="_blank" href='https://www.linkedin.com/in/john-yan-2b839189/'><i className="fab fa-linkedin" /></a>
                 </div>
-                <div>
-                    <i className="fab fa-stack-overflow" />
-                    <a href='https://stackoverflow.com/users/3188910/justwe?tab=profile'>https://stackoverflow.com/users/justwe</a>
+                <div className='col-4'>
+                    <a target="_blank" href='https://stackoverflow.com/users/3188910/justwe?tab=profile'><i className="fab fa-stack-overflow" /></a>
                 </div>
             </div>
         );

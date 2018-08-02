@@ -1,5 +1,14 @@
 @import './components/page/profile/profile.css';
 
+$line-color: #7f298c; //line color
+$line-style: 3px solid $line-color; //line style
+
+$side-bar-icon-size:22px; //side bar icon size
+
+body {
+  font-family: Calibri,"Helvetica Neue","Segoe UI",Helvetica,Arial,sans-serif !important
+}
+
 .App {
   text-align: center;
 }
@@ -38,12 +47,13 @@ New stuff
   text-align: center; 
   display: flex;
   flex-direction: row;
+  font-size: 18px;
 }
 
 .section-body div.header:before, .section-body div.header:after{
   content: "";
   flex: 1 1;
-  border-bottom: 1px solid #000;
+  border-bottom: $line-style;
   margin: auto;
 }
 
@@ -57,11 +67,26 @@ New stuff
   align-items: center; 
 }
 
-.section-main-body .right {
-  border-bottom: 1px solid black;
-  padding-bottom: 2px;
-  width: 100%;
-  margin-left: 10px;
+.section-main-body {
+  .left {
+    font-size: 32px;
+    color: $line-color;
+    margin-top: 6px;
+  }
+  .right {
+    border-bottom: $line-style;
+    padding-bottom: 2px;
+    width: 100%;
+    margin-left: 10px;
+    font-size: 23px;
+    color: $line-color;
+  }
+}
+
+.section-body {
+  .body {
+    padding: 10px;
+  }
 }
 
 .footer {
@@ -76,4 +101,45 @@ New stuff
 a {
     white-space: pre-wrap; /* css-3 */     
     word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+
+.contact-me {
+  i {
+    font-size: $side-bar-icon-size;
+  }
+}
+
+.social-link {
+  text-align: center;
+  i {
+    font-size: $side-bar-icon-size;
+    color: $line-color;
+    webkit-transition: font-size 1s;
+    -moz-transition:  font-size 1s;
+    -o-transition: font-size 1s;
+    transition:  font-size 1s;
+
+    &:hover {
+      font-size: 44px;
+    }
+  }
+}
+
+.test {
+  display: flex;
+  height: 1rem;
+  background-color: #e9ecef;
+
+  .tt {
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: #7f298c;
+    width: 50%;
+  }
 }

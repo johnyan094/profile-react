@@ -34,7 +34,11 @@ export class ProfileSideBar extends React.Component {
             <SocialLink />
           </SectionSide>
 
-          <SectionSide name='Professional Skills' />
+          <SectionSide name='Professional Skills'>
+            <div className='test'>
+              <div className='tt' />
+            </div>
+          </SectionSide>
         </div>
       </div>
     );
