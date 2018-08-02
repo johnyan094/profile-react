@@ -77,11 +77,40 @@ export class SubExp extends React.Component<ISubExpProps> {
     }
 }
 
+export class CCAClient extends React.Component {
+    public render() {
+        return (
+            <div>
+                <div className='project-title'>
+                    Project: QuickTap
+                </div>
+                <br />
+                <div>
+                    <div>Responsibilities</div>
+                    <ul>
+                        <li>Developed QuickTap application to encourage vending for
+            COCA-COLA AMATIL. <a target="_blank" href='https://www.quicktap.co.nz/'>https://www.quicktap.co.nz/</a> and <a target="_blank" href='https://register.quicktap.com.au/'>https://register.quicktap.com.au/</a></li>
+                        <li>
+                            Implemented Push Notification on both front-end (Android) and windows service to handle back-end (C#,TSQL)
+                        </li>
+                        <li>
+                        Personally develop and maintain the administrator web for
+            admins <a target="_blank" href='https://register.quicktap.com.au/administrator/'>https://register.quicktap.com.au/administrator/</a> which
+            serve and promote vending to BHP and Serco Australia
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        );
+    }
+}
+
 interface IExperienceProps {
     exp: ClientExp[],
     company: string,
     date: string,
-    subText: string
+    subText: string,
+    isCCA?: boolean
 }
 
 export class Experience extends React.Component<IExperienceProps> {
@@ -92,11 +121,17 @@ export class Experience extends React.Component<IExperienceProps> {
 
     public render() {
 
-        const subExps = this.props.exp.map(
+        let subExps;
+        subExps = this.props.exp.map(
             (item) => {
                 return <SubExp key={item.name} exp={item} />
             }
         )
+
+        if (this.props.isCCA) {
+            subExps = <CCAClient />
+        }
+
 
         return (
             <div className='experience'>

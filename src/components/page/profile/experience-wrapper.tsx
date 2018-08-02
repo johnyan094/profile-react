@@ -35,6 +35,7 @@ export class ExperienceWrapper extends React.Component {
                 company=''
                 subText=''
                 date='Feb 2013 – Oct 2014'
+                isCCA = {true}
               />
             </div>
             <div className="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
