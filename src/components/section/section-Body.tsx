@@ -1,43 +1,42 @@
 import * as React from 'react';
 
-interface ISectionBodyProps{
+interface ISectionBodyProps {
   name: string;
 }
 
 export class SectionSide extends React.Component<ISectionBodyProps> {
 
-  constructor(props: ISectionBodyProps){
+  constructor(props: ISectionBodyProps) {
     super(props);
   }
 
   public render() {
     return (
       <div className='section-body'>
-          <div className='header'>
-            <span>{this.props.name}</span>
-          </div>
-          <div className='body'>
-            {this.props.children}
-          </div>
+        <div className='header'>
+          <span>{this.props.name}</span>
+        </div>
+        <div className='body'>
+          {this.props.children}
+        </div>
       </div>
     );
   }
 }
 
-interface ISectionMainBodyProps{
+interface ISectionMainBodyProps {
   name: string;
 }
 
 export class SectionMainBody extends React.Component<ISectionMainBodyProps> {
 
-  constructor(props: ISectionMainBodyProps){
+  constructor(props: ISectionMainBodyProps) {
     super(props);
   }
 
   public render() {
     let icon;
-    switch(this.props.name)
-    {
+    switch (this.props.name) {
       case 'Academic Education':
         icon = 'fas fa-graduation-cap';
         break;
@@ -48,7 +47,7 @@ export class SectionMainBody extends React.Component<ISectionMainBodyProps> {
         icon = 'fas fa-flask';
         break;
       case 'Interest':
-        icon ='far fa-laugh-beam';
+        icon = 'far fa-laugh-beam';
         break;
       default:
         icon = '';
@@ -56,13 +55,13 @@ export class SectionMainBody extends React.Component<ISectionMainBodyProps> {
 
     return (
       <div className='section-main-body'>
-          <div className='header'>
-            <div className='left'><i className={icon} style={{fontSize:'24px'}}/></div>
-            <div className='right'>{this.props.name}</div>
-          </div>
-          <div className='body'>
-            {this.props.children}
-          </div>
+        <div className='header'>
+          <div className='left'><i className={icon} style={{ fontSize: '24px' }} /></div>
+          <div className='right'>{this.props.name}</div>
+        </div>
+        <div className='body'>
+          {this.props.children}
+        </div>
       </div>
     );
   }
