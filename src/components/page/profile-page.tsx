@@ -7,7 +7,10 @@ export class ProfilePage extends React.Component {
   public render() {
     return (
       <div>
-        <div className='row blade' />
+        <div className='row'>
+          <div className='blade-1' />
+          <div className='blade-2' />
+        </div>
         <div className="row">
           <ProfileSideBar />
           <ProfileBody />
