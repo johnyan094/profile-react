@@ -32,7 +32,7 @@ class App extends React.Component<{}, IAppState> {
     return (
       <div>
         <div className="container">
-          <Common.Header />
+          {/* <Common.Header /> */}
           <Common.Nav onClick={this.handleNavClick} />
           <Common.Pager pager={this.state.pager} />
         </div>

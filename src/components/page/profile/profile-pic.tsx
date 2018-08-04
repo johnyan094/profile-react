@@ -7,10 +7,10 @@ export class ProfilePic extends React.Component {
         return (
             <div className='profile-pic'>
                 <img src={profilePic} />
-                <h1>
-                    John Yan
-                </h1>
-                <h4>Full Stack Developer</h4>
+                <div className='profile-title'>
+                    <h1>John Yan</h1>
+                    <h4>Full Stack Developer</h4>
+                </div>
             </div>
         );
     }

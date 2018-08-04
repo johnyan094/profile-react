@@ -5,13 +5,13 @@ export class Skills extends React.Component {
   public render() {
     return (
         <div>
-            <Skill name='AngularJS' exp={50} />
-            <Skill name='ReactJS' exp={60} />
-            <Skill name='Typescript' exp={65} />
-            <Skill name='SASS' exp={70} />
+            <Skill name='AngularJS' exp={80} />
+            <Skill name='ReactJS' exp={85} />
+            <Skill name='Typescript' exp={75} />
+            <Skill name='SASS' exp={75} />
             <Skill name='MVC' exp={80} />
             <Skill name='SQL' exp={85} />
-            <Skill name='Java' exp={60} />
+            <Skill name='Java' exp={65} />
             <Skill name='Automation' exp={75} />
         </div>
     );
