@@ -147,3 +147,9 @@ a {
   padding-top: 20px;
   width: 100%;
   margin-bottom: 44px; }
+
+@media (min-width: 767.98px) {
+  .profile-side-bar {
+    border-left: #7f298c;
+    border-left-width: medium;
+    border-left-style: solid; } }

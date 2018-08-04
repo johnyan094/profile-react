@@ -189,3 +189,12 @@ a {
   width: 100%;
   margin-bottom: 44px;
 }
+
+
+@media (min-width: 767.98px) {
+  .profile-side-bar {
+    border-left: $line-color;
+    border-left-width: medium;
+    border-left-style: solid;
+  }
+}

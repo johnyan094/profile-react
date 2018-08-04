@@ -54,7 +54,7 @@ export class ProfileBody extends React.Component {
 
   public render() {
     return (
-      <div className="col-12 col-md-8">
+      <div className="col-12 col-md-8 profile-side-bar">
         <SectionMainBody name='Academic Education'>
           <Education />
         </SectionMainBody>
