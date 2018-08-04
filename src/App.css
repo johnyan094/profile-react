@@ -190,8 +190,9 @@ a {
   .nav-pills a:hover:after {
     width: 100%; }
 
-.nav-pills a .acive {
-  color: black; }
+.nav-pills a.active:after {
+  color: black;
+  width: 100%; }
 
 .nav-pills .nav-link {
   border-radius: 0; }
