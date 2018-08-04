@@ -6,9 +6,9 @@ export class Education extends React.Component {
     public render() {
         return (
             <div className='education'>
-                <div className='title'>
+                <h4 className='title'>
                     Bachelor of Computer Science (The University of Auckland)
-                </div>
+                </h4>
                 <div>
                     <SectionInner>
                         <div>Principles of Programming</div>

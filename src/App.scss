@@ -68,6 +68,10 @@ New stuff
 }
 
 .section-main-body {
+  .body {
+    margin: 10px 0;
+  }
+
   .left {
     font-size: 32px;
     color: $line-color;
@@ -125,12 +129,15 @@ a {
   }
 }
 
-.test {
+.exp-wrapper {
   display: flex;
   height: 1rem;
   background-color: #e9ecef;
+  padding: 0;
+  border-radius: .25rem;
+  left: -15px;
 
-  .tt {
+  .exp-level {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -140,6 +147,34 @@ a {
     -ms-flex-pack: center;
     justify-content: center;
     background-color: #7f298c;
-    width: 50%;
+    border-radius: .25rem;
   }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .exp-wrapper {
+    left: 0px;
+  }
+
+  .exp-name {
+    padding-left: 0px;
+  }
+}
+
+.profile-pic {
+  text-align: center;
+  img {
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 50%;
+    max-width: 230px;
+    margin-top: -150px;
+    background-color: white;
+    padding: 5px;
+  }
+}
+
+.blade {
+  display: block;
+  margin-top: 200px;
+
 }

@@ -1,14 +1,17 @@
 import * as React from 'react';
 import { SectionMainBody, SectionSide } from '../section/index'
-import { AboutMe, ContactMe, Education, ExperienceWrapper, SocialLink } from './profile/index'
+import { AboutMe, ContactMe, Education, ExperienceWrapper, ProfilePic, SocialLink, Skills } from './profile/index'
 
 export class ProfilePage extends React.Component {
 
   public render() {
     return (
-      <div className="row">
-        <ProfileSideBar />
-        <ProfileBody />
+      <div>
+        <div className='row blade' />
+        <div className="row">
+          <ProfileSideBar />
+          <ProfileBody />
+        </div>
       </div>
     );
   }
@@ -20,8 +23,9 @@ export class ProfileSideBar extends React.Component {
 
   public render() {
     return (
-      <div className="col-12 col-sm-4">
+      <div className="col-12 col-md-4">
         <div>
+          <ProfilePic />
           <SectionSide name='About Me'>
             <AboutMe />
           </SectionSide>
@@ -35,9 +39,7 @@ export class ProfileSideBar extends React.Component {
           </SectionSide>
 
           <SectionSide name='Professional Skills'>
-            <div className='test'>
-              <div className='tt' />
-            </div>
+            <Skills />
           </SectionSide>
         </div>
       </div>
@@ -49,7 +51,7 @@ export class ProfileBody extends React.Component {
 
   public render() {
     return (
-      <div className="col-12 col-sm-8">
+      <div className="col-12 col-md-8">
         <SectionMainBody name='Academic Education'>
           <Education />
         </SectionMainBody>

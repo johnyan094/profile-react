@@ -8,9 +8,7 @@ export class ExperienceWrapper extends React.Component {
   public render() {
     return (
       <div>
-        <div className='title'>
-          Full Stack Developer
-        </div>
+        <div className='title' />
         <SectionInner>
           <nav>
             <div className="nav nav-tabs" id="nav-tab" role="tablist">
