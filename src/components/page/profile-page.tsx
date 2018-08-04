@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { SectionMainBody, SectionSide } from '../section/index'
-import { AboutMe, ContactMe, Education, ExperienceWrapper, ProfilePic, SocialLink, Skills } from './profile/index'
+import { AboutMe, ContactMe, Education, ExperienceWrapper, Interest, InterestWrapper, ProfilePic, SocialLink, Skills } from './profile/index'
 
 export class ProfilePage extends React.Component {
 
@@ -8,8 +8,10 @@ export class ProfilePage extends React.Component {
     return (
       <div>
         <div className='row'>
-          <div className='blade-1' />
-          <div className='blade-2' />
+          <div className='col-12'>
+            <div className='blade-1' />
+            <div className='blade-2' />
+          </div>
         </div>
         <div className="row">
           <ProfileSideBar />
@@ -61,7 +63,16 @@ export class ProfileBody extends React.Component {
         <SectionMainBody name='Work Experience'>
           <ExperienceWrapper />
         </SectionMainBody>
-        <SectionMainBody name='Interest' />
+        <SectionMainBody name='Interest'>
+          <InterestWrapper>
+            <Interest name='Running' />
+            <Interest name='Swimming' />
+            <Interest name='Hiking' />
+            <Interest name='Guitar' />
+            <Interest name='Music' />
+            <Interest name='Gaming' />
+          </InterestWrapper>
+        </SectionMainBody>
       </div>
     );
   }
