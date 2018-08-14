@@ -37,9 +37,9 @@ export class Nav extends React.Component<INavProps,INavStates> {
         <div>
           <nav className="nav nav-pills flex-column flex-sm-row">
             <a className={this.getClassName(1)} href="#" onClick = {() =>this.handleOnclick(1)} >Profile</a>
-            <a className={this.getClassName(2)}  href="#" onClick = {() =>this.handleOnclick(2)}>Profilea</a>
-            <a className={this.getClassName(3)}  href="#" onClick = {() =>this.handleOnclick(3)}>Link</a>
-            <a className={this.getClassName(4)}  href="#" onClick = {() =>this.handleOnclick(4)}>Disabled</a>
+            <a className={this.getClassName(2)}  href="#" onClick = {() =>this.handleOnclick(2)}>Blog</a>
+            {/* <a className={this.getClassName(3)}  href="#" onClick = {() =>this.handleOnclick(3)}>Link</a>
+            <a className={this.getClassName(4)}  href="#" onClick = {() =>this.handleOnclick(4)}>Disabled</a> */}
           </nav>
         </div>
       );
