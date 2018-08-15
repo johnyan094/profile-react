@@ -199,3 +199,11 @@ a {
 .nav-pills .nav-link.active {
   color: black;
   background-color: white; }
+
+.first-letter::first-letter {
+  color: #7f298c;
+  float: left;
+  font-size: 4em;
+  line-height: 52px;
+  margin-top: -5px;
+  margin-right: 3px; }
