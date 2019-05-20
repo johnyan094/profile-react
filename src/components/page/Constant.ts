@@ -1,5 +1,17 @@
 import { ClientExp, WorkFor } from '../page/profile/experience'
 
+export const Cin7Client: ClientExp[] = [
+    new ClientExp(
+        '',
+        [
+            `Key developer for the brand new cin7 marketing website in full-stack aspect`,
+            `Provide mentor for junior and intermediate developer `
+        ],
+        [],
+        WorkFor.None
+    )
+]
+
 export const CCAClient: ClientExp[] = [
     new ClientExp(
         'QuickTap',

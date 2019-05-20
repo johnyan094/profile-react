@@ -35,7 +35,7 @@ export class SubExp extends React.Component<ISubExpProps> {
                 </div>
         }
 
-        let workFor;
+        let workFor = null;
         switch (this.props.exp.workFor) {
             case WorkFor.Client:
                 workFor = <div className='project-title'>
@@ -46,6 +46,8 @@ export class SubExp extends React.Component<ISubExpProps> {
                 workFor = <div className='project-title'>
                     Project: {this.props.exp.name}
                 </div>
+                break;
+            case WorkFor.None:
                 break;
         }
 
@@ -152,7 +154,8 @@ export class Experience extends React.Component<IExperienceProps> {
 
 export enum WorkFor {
     Client,
-    Project
+    Project,
+    None
 }
 
 export class ClientExp {
